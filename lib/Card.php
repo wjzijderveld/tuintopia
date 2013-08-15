@@ -61,6 +61,14 @@ class Card
     }
 
     /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+    /**
      * @param array $inputs
      */
     public function setInputs($inputs)
@@ -86,8 +94,6 @@ class Card
         $this->outputs = $outputs;
     }
 
-    // @codeCoverageIgnoreStart
-
     /**
      * @return array
      */
@@ -95,6 +101,9 @@ class Card
     {
         return $this->outputs;
     }
+
+    // @codeCoverageIgnoreStart
+    // Methods not yet been used and implemented
 
     /**
      * @param boolean $provideShadow
@@ -142,22 +151,6 @@ class Card
     public function getProvidesSun()
     {
         return $this->providesSun;
-    }
-
-    /**
-     * @param string $type
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-        return $this->type;
     }
 
     /**
