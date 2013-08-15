@@ -123,7 +123,6 @@ class Board
      */
     public function isEmpty($x, $y)
     {
-
         return $this->isValid($x, $y) && !isset($this->map[$x][$y]);
     }
 

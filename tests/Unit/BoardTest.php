@@ -54,6 +54,12 @@ class BoardTest extends PHPUnit_Framework_TestCase
         $this->board->addCard($card);
     }
 
+    public function testIsValid()
+    {
+        $this->assertTrue($this->board->isValid(1,1));
+        $this->assertFalse($this->board->isValid(0,0));
+    }
+
     public function testGetNeighbours()
     {
         $house = new House();

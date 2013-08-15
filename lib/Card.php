@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @codeCoverageIgnore
  * Class Card
  */
 class Card 
@@ -48,13 +47,6 @@ class Card
         $this->outputs = array();
     }
 
-    static public function createFromIni(array $ini)
-    {
-        $card = new self;
-        $card->setInputs(array_map('trim', explode(',', $ini['input'])));
-        $card->setOutputs(array_map('trim', explode(',', $ini['output'])));
-    }
-
     public function setCoord(Coord $coord)
     {
         $this->coord = $coord;
@@ -93,6 +85,8 @@ class Card
         sort($outputs);
         $this->outputs = $outputs;
     }
+
+    // @codeCoverageIgnoreStart
 
     /**
      * @return array
@@ -245,5 +239,7 @@ class Card
     {
         return $this->requiresWindConverage;
     }
+
+    // @codeCoverageIgnoreEnd
 
 }
