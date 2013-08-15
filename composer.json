@@ -1,0 +1,14 @@
+{
+    "name": "wjzijderveld/tuintopia",
+    "description": "Tweakers Tuintopia Contest",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Willem-Jan Zijderveld",
+            "email": "wjzijderveld@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "~2.3"
+    }
+}
