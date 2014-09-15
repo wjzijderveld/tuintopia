@@ -133,4 +133,6 @@ foreach ($emptyNeighbours as $neighbour) {
     $totalPoints += $points;
 }
 
+echo 'Total points (non-finished game): ' . $totalPoints . PHP_EOL;
+
 // TODO: Calculate (in a recursive funciton) next card to get empty neighbours from
